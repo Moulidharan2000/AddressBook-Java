@@ -1,10 +1,14 @@
 package com.bridgelabz.addressbook;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class AddressBook {
 	
-	public static void main(String[] args) {
+	
+	ArrayList<ContactDetails> contactList = new ArrayList<ContactDetails>();
 		
-		System.out.println("Welcome to Address Book Program\n");
-		Contacts.Contact();
+	public void AddContacts(ContactDetails person) {
+		contactList.add(person);
 	}
 }
