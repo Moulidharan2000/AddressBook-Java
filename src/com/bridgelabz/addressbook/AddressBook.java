@@ -10,12 +10,13 @@ public class AddressBook {
 	Scanner scan = new Scanner(System.in);
 	
 	public void Options() {
+		
 		boolean changes = true;
 		int num;
 		while(changes) {
-			System.out.println("\nChoose the Options : ");
+			System.out.println("\nChoose the Options ----------");
 			System.out.println("Option 1 : Add Contacts\n"+"Option 2 : Edit Existing Contacts\n"+
-							   "Option 3 : Display Contacts\n");
+							   "Option 3 : Delete Contacts\n"+"Option 4 : Display Contacts\n"+"Option 5 : Exit\n");
 			System.out.print("Enter the Option : ");
 			num = scan.nextInt();
 			switch(num) {
@@ -26,11 +27,13 @@ public class AddressBook {
 					EditContacts();
 					break;
 				case 3:
+					DeletePerson();
+					break;
+				case 4:
 					DisplayContacts();
 					break;
 				default:
-					changes = false;
-					System.out.println("Exit");
+					System.out.println("----------Exiting----------");
 			}
 		}
 	}
@@ -38,10 +41,9 @@ public class AddressBook {
 	public void AddContacts() {
 
 		ContactDetails person = new ContactDetails();
-		System.out.println("Welcome to Address Book Program\n");
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Enter the FirstName : ");
+		System.out.print("\nEnter the FirstName : ");
 		String firstName = scan.next();
 		
 		System.out.print("Enter the Last Name : ");
@@ -122,7 +124,22 @@ public class AddressBook {
 		}
 	}
 	
+	public void DeletePerson() {
+		
+		System.out.print("Enter the Name to Delete : ");
+		String firstName = scan.next();
+		Iterator<ContactDetails> iterator = contactList.listIterator();
+		while(iterator.hasNext()) {
+			ContactDetails person = iterator.next();
+			if(firstName.equals(person.getFirstName())) {
+				contactList.remove(person);
+				System.out.println("Contact Details Deleted !!!");
+			}
+		}
+	}
+	
 	public void DisplayContacts() {
+		
 		Iterator<ContactDetails> iterator = contactList.iterator();
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
