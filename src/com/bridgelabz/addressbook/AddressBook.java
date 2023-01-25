@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class AddressBook {
 	
 	private final int NUM_OF_PEOPLE = 5;
+	public String addressBookName;
 	Scanner scan = new Scanner(System.in);
 	ContactDetails[]contactList = new ContactDetails[NUM_OF_PEOPLE];
 	public static int numberOfEntries = 0;
@@ -54,7 +55,6 @@ public class AddressBook {
 	            for(int index=numberOfEntries; index < endIterator ; index++) {
 
 	                ContactDetails person = new ContactDetails();
-	                AddressBook address = new AddressBook();
 	                System.out.println("Enter the details of Person "+(index+1));
 
 	                System.out.println("Enter First Name: ");

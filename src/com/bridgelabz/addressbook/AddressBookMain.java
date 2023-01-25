@@ -11,5 +11,7 @@ public class AddressBookMain {
 		addressBook.EditContacts();
 		addressBook.DeletePerson();
 		addressBook.DisplayContacts();
+		AddressBookDirectory Directory = new AddressBookDirectory();
+	    Directory.operationDirectory();
 	}
 }
