@@ -3,7 +3,7 @@ package com.bridgelabz.addressbook;
 public class ContactDetails {
 	
 	String firstName, lastName, address, state, city, email;
-	int zipCode;
+	long zipCode;
 	long phoneNumber;
 	
 	public String getFirstName() {
@@ -18,7 +18,7 @@ public class ContactDetails {
 	public String getState() {
 		return firstName;
 	}
-	public int getZipCode() {
+	public long getZipCode() {
 		return zipCode;
 	}
 	public long getPhoneNumber() {
@@ -40,7 +40,7 @@ public class ContactDetails {
 	public void setState(String state) {
 		this.state = state;
 	}
-	public void setZipCode(int zipCode) {
+	public void setZipCode(long zipCode) {
 		this.zipCode = zipCode;
 	}
 	public void setPhoneNumber(long phoneNumber) {
