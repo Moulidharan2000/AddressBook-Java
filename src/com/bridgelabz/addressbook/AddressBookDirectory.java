@@ -116,6 +116,7 @@ public class AddressBookDirectory implements AddressBookDirectoryIF {
     	}
     }
     public void displayDirectoryContents() {
+    	
     	System.out.println("----- Contents of the Address Book Directory-----");
     	for (String eachBookName : addressBookDirectory.keySet()) {
     		System.out.println(eachBookName);

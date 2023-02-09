@@ -23,7 +23,6 @@ public class Address {
 	public void setZipCode(long zipCode2) {
 		this.zipCode = zipCode2;
 	}
-	
 	public String toString() {
 		return city+", "+state+", "+zipCode+".";
 	}

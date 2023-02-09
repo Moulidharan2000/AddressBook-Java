@@ -24,6 +24,7 @@ public class AddressBook {
 		return new ArrayList<ContactDetails>(contactList.values());
 	}
 	public void operation() {
+		
 		boolean moreChanges = true;
 		do {
 			System.out.println("\nChoose the operation you want to perform");

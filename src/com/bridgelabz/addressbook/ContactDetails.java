@@ -36,6 +36,7 @@ public class ContactDetails {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 	public String toString() {
 		return "Added Person Details  \nFirstName : "+firstName+" "+lastName+"\nAddress : "+address+"\nPhone Number : "+phoneNumber+"\nEmail : "+email;
 	}

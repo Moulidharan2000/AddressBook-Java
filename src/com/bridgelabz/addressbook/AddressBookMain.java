@@ -3,7 +3,7 @@ package com.bridgelabz.addressbook;
 import java.util.Scanner;
 
 public class AddressBookMain {
-
+	
 	public static void main(String[] args) {
 		
 		Scanner scannerObject = new Scanner(System.in);
@@ -13,4 +13,5 @@ public class AddressBookMain {
 	    AddressBook addressBook = new AddressBook();
 	    addressBook.operation();
 	}
+	
 }
