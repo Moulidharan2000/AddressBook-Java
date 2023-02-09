@@ -1,17 +1,16 @@
 package com.bridgelabz.addressbook;
 
+import java.util.Scanner;
+
 public class AddressBookMain {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Welcome to Address Book Program");
-		AddressBook addressBook = new AddressBook();
-		addressBook.Options();
-		addressBook.AddContacts();
-		addressBook.EditContacts();
-		addressBook.DeletePerson();
-		addressBook.DisplayContacts();
-		AddressBookDirectory Directory = new AddressBookDirectory();
-	    Directory.operationDirectory();
+		Scanner scannerObject = new Scanner(System.in);
+		System.out.print("Welcome To The Address Book Program");	
+		AddressBookDirectory addressBookDirectory = new AddressBookDirectory();
+		addressBookDirectory.operationDirectory();
+	    AddressBook addressBook = new AddressBook();
+	    addressBook.operation();
 	}
 }
