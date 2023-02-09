@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class AddressBook {
+public class AddressBook implements AddressBookIF {
 	
 	Scanner scannerObject = new Scanner(System.in);
 	public Map<String, ContactDetails> contactList = new HashMap<String,ContactDetails>();

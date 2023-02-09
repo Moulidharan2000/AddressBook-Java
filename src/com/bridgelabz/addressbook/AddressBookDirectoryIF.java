@@ -3,8 +3,7 @@ package com.bridgelabz.addressbook;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public interface AddressBookDirectoryIF {
-	
+public interface AddressBookDirectoryIF {	
 	public  void addAddressBook();
     public void operationDirectory();
     public void displayDirectoryContents();

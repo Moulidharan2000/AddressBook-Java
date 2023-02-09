@@ -90,6 +90,7 @@ public class AddressBookDirectory implements AddressBookDirectoryIF {
     	System.out.println("Contact Does Not Exist !!");
     }
     public void searchByState() {
+    	
     	System.out.println("Enter the name of the State where the Person resides : ");
     	String StateName = scannerObject.next();
     	System.out.println("Enter the name of the Person : ");
@@ -106,6 +107,7 @@ public class AddressBookDirectory implements AddressBookDirectoryIF {
     	System.out.println("Contact Does Not Exist !!");
     }
     public void displayPeopleByRegion(HashMap<String, ArrayList<ContactDetails>> listToDisplay) {
+    	
     	ArrayList<ContactDetails> list;
     	for (String name : listToDisplay.keySet()) {
     		System.out.println("People residing in: " + name);
