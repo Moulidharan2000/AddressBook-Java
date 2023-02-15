@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class AddressBook implements AddressBookIF {
 	
-	 Scanner scannerObject = new Scanner(System.in);
+	  Scanner scannerObject = new Scanner(System.in);
 	    public Map<String, ContactDetails> contactList = new HashMap<String,ContactDetails>();
 	    public static HashMap<String, ArrayList<ContactDetails>> personByCity  = new HashMap<String, ArrayList<ContactDetails>>();
 	    public static HashMap<String, ArrayList<ContactDetails>> personByState = new HashMap<String, ArrayList<ContactDetails>>();
@@ -204,4 +204,4 @@ public class AddressBook implements AddressBookIF {
 	            System.out.println();
         }
     }
-}
+}	
